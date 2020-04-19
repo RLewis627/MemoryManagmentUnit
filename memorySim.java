@@ -14,7 +14,6 @@ public class memorySim {
 	private static String file;
 	private static int numOfProcesses = 0;
 	private static long prevAnnouncement = -1;
-	private static float total = 0;
 
 	public static void main(String[] args) {
 		getUserInput();
@@ -42,6 +41,7 @@ public class memorySim {
 	}
 
 	private static void printTurnaround() {
+		int total = 0;
 	    for (int i = 0; i < numOfProcesses; i++) {
 	    	total += PArray[i].getTimeFinished() - PArray[i].getArrival();
 	    }
