@@ -45,7 +45,7 @@ public class memorySim {
 	    for (int i = 0; i < numOfProcesses; i++) {
 	    	total += PArray[i].getTimeFinished() - PArray[i].getArrival();
 	    }
-	    System.out.printf("Average Turnaround Time: %4.2f\n", (total / numOfProcesses));
+	    System.out.printf("Average Turnaround Time: %4d\n", (total / numOfProcesses));
 	}
 
 	private static void allocateMemory(long time) {
