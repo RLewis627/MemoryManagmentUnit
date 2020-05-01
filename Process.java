@@ -33,6 +33,5 @@ public class Process {
 		processSize = pSize;
 		pageSize = frameSize;
 		segmentSizes = segSizes;
-		isActive = true;
 	}
 }
