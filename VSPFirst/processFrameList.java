@@ -22,21 +22,16 @@ public class processFrameList {
 	
 	public void fitProcessinMemory(Process p) {
 		int remainingMem = p.getProcessSize();
-		//indecies[0] = starting index in memory
-		//indecies[1] = ending index in memory
-		int[] indecies = new int[2];
 		int i;
 		
 		for(i = 0; i < numOfFrames; i++) {
 			if(listOfFrames[i].getFrameOwner() == 0) {
-				indecies[0] = i;
 				listOfFrames[i].setFrameOwner(1);
 				listOfFrames[i].setAssignedProcess(p.getProcessId());
 				remainingMem--;
 			}
-			if(remainingMem <= 0){indecies[1] = indecies[0] + (p.getProcessSize() - 1);break;}
+			if(remainingMem <= 0){break;}
 		}
-		listOfFrames[i].setIndexInMem(indecies);
 	}
 	
 	public void printFrameList() {
