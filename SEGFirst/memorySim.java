@@ -6,7 +6,6 @@ public class memorySim {
 	private final static int MAX_TIME = 100000;
 	static int frameSize = 0;
 	static int fitAlgorithm = 0;
-	//static Process[] PArray;
 	static Process[] PArray;
 	static processQueue p_queue;
 	static processFrameList framelist;
@@ -20,7 +19,6 @@ public class memorySim {
 		getUserInput();
 		readProcessFile();
 		p_queue = new processQueue(numOfProcesses);
-		//framelist = new processFrameList((memSize / frameSize), frameSize);
 		framelist = new processFrameList(memSize);
 		
 		mLoop();
@@ -45,7 +43,6 @@ public class memorySim {
 	private static void printTurnaround() {
 		int total = 0;
 	    for (int i = 0; i < numOfProcesses; i++) {
-	    	//total += PArray[i].getTimeFinished() - PArray[i].getArrival();
 	    	total += PArray[i].getTimeFinished() - PArray[i].getArrival();
 	    }
 	    System.out.printf("Average Turnaround Time: %4d\n", (total / numOfProcesses));
