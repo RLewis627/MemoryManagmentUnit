@@ -50,7 +50,7 @@ public class processFrameList {
 	        }else if(inFreeBlock == 1 && listOfFrames[i].getFrameOwner() == 1) { //Hole -> Process
 	            inFreeBlock = 0;
 	            startp = i;
-	            System.out.printf("\t\t%d-%d: Hole(inside for loop)\n",
+	            System.out.printf("\t\t%d-%d: Hole\n",
 	                   start,
 	                   (i - 1));
 	        }
@@ -64,7 +64,7 @@ public class processFrameList {
 	        }
 	    }
 	    if (inFreeBlock == 1 && startp != 2000) {
-	        System.out.printf("\t\t%d-%d: Hole (outside for loop)\n",
+	        System.out.printf("\t\t%d-%d: Hole\n",
 	               startp,
 	               (i - 1));
 	    }
