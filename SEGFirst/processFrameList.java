@@ -3,7 +3,6 @@ public class processFrameList {
 	private int numOfFrames;
 
 	public processFrameList(int numOfPages) {
-		//VSP numOfPages = memSize	pageSize = 1
 		listOfFrames = new frame[numOfPages];	//array 2000 frames
 		numOfFrames = numOfPages;				//numOfFrames = 2000
 		for(int i = 0; i < numOfFrames; i++) {listOfFrames[i] = new frame();}
