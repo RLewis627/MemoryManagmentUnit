@@ -42,9 +42,7 @@ public class processFrameList {
 				numOfEmptyFrames = 0;
 			}
 		}
-		System.out.println("DEBUG: Number of empty frames: "+numOfEmptyFrames);
 		if(numOfEmptyFrames == numOfFrames) {
-			System.out.println("DEBUG: There are "+numOfFrames+" empty frames. Placing process "+p.getProcessId()+" in memory");
 			int g = 0;
 			while(remainingMem > 0) {
 				listOfFrames[g].setFrameOwner(1);
@@ -59,7 +57,6 @@ public class processFrameList {
 			}
 			startIndex = holeArray[maxAt].getStart();
 				
-			System.out.println("DEBUG: The largest hole starts at index "+startIndex);
 			while(remainingMem > 0) {
 				listOfFrames[startIndex].setFrameOwner(1);
 				listOfFrames[startIndex++].setAssignedProcess(p.getProcessId());
