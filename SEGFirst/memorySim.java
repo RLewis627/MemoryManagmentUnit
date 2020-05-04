@@ -19,7 +19,7 @@ public class memorySim {
 		getUserInput();
 		readProcessFile();
 		p_queue = new processQueue(numOfProcesses);
-		framelist = new processFrameList(memSize);
+		framelist = new processFrameList((memSize / frameSize), frameSize);
 		
 		mLoop();
 	}
@@ -63,7 +63,7 @@ public class memorySim {
 	            System.out.printf("%sMM moves Process %d to memory\n",
 	            		getAnnouncedTime(time),
 	            		p.getProcessId());
-
+	            
 	            framelist.fitProcessinMemory(p);
 
 	            p.setIsActive(true);
