@@ -19,7 +19,7 @@ public class memorySim {
 		getUserInput();
 		readProcessFile();
 		p_queue = new processQueue(numOfProcesses);
-		framelist = new processFrameList((memSize / frameSize), frameSize);
+		framelist = new processFrameList(memSize);
 		
 		mLoop();
 	}
