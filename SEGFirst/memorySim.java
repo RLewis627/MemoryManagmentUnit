@@ -80,7 +80,6 @@ public class memorySim {
 	    Process p;
 
 	    for (int i = 0; i < numOfProcesses; i++) {
-	        //p = PArray[i];
 	        p = PArray[i];
 	        timeInMemory = time - p.getLifetime();
 	        if (p.getIsActive() && (timeInMemory >= p.getArrivalInMemory())){
@@ -98,7 +97,6 @@ public class memorySim {
 	private static void enqueueProcess(long time) {
 		Process p;
 	    for (int i = 0; i < numOfProcesses; i++) {
-	        //p = PArray[i];
 	        p = PArray[i];
 
 	        if (p.getArrival() == time) {
@@ -124,7 +122,7 @@ public class memorySim {
 	private static void readProcessFile() {
 		File fileObj = new File(file);
 		Scanner readFile = null;
-		int[] tmp;
+		int tmp[];
 		Process P = null;
 		
 		try {
@@ -133,6 +131,7 @@ public class memorySim {
 			System.out.println("File "+file+" cannot be found");
 			System.exit(0);
 		}
+		
 		numOfProcesses = readFile.nextInt();
 		PArray = new Process[numOfProcesses];
 		int k = 0;
