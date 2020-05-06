@@ -1,3 +1,16 @@
+/***************************************************************
+* file: processFrameList.java
+* author: Rachel Lewis
+* class: CS 4310 - Operating Systems
+*
+* assignment: program 3
+* date last modified: 5/3/2020
+*
+* purpose: This file is the class definition for a data structure that internally handles an
+* array of frames to be used by the program and to represent contiguous memory space. It 
+* activley allocates and deallocates processes to memory, detiermins if a process can fit in
+* memory, and prints the contents of the memory map
+****************************************************************/ 
 public class processFrameList {
 	private frame[] listOfFrames;
 	private int numOfFrames;
