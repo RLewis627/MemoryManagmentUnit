@@ -1,3 +1,16 @@
+/***************************************************************
+* file: processQueue.java
+* author: Rachel Lewis
+* class: CS 4310 - Operating Systems
+*
+* assignment: program 3
+* date last modified: 5/3/2020
+*
+* purpose: This file is the class definition for a process queue data structure. It simulates 
+* a queue of processes and utilizes internally an array of Process objects. Methods that are
+* classically associated with queues are present in this file, such an enqueue, dequeue, peek,
+* and so on
+****************************************************************/ 
 public class processQueue {
 	private int capacity;
 	private int size;
