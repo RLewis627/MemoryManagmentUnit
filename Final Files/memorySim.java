@@ -1,3 +1,15 @@
+/***************************************************************
+* file: memorySim.java
+* author: Rachel Lewis
+* class: CS 4310 - Operating Systems
+*
+* assignment: program 3
+* date last modified: 5/3/2020
+*
+* purpose: This file is the main driver program for this program. This file reads in the selected input files,
+* instatiates a new Process object, and then calls variuos methods from processQueue and processFrameList to
+* to manage the simulated memory space
+****************************************************************/ 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
