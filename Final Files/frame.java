@@ -1,3 +1,14 @@
+/***************************************************************
+* file: frame.java
+* author: Rachel Lewis
+* class: CS 4310 - Operating Systems
+*
+* assignment: program 3
+* date last modified: 5/3/2020
+*
+* purpose: This file is the class definition for a frame object.
+*
+****************************************************************/ 
 public class frame {
 	private int frameOwner; 		//1 if assigned to process, 0 if it's a hole
 	private int assignedProcess;	//name of process who owns the frame it occupies
