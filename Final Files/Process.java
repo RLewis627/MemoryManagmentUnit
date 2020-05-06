@@ -1,3 +1,14 @@
+/***************************************************************
+* file: Process.java
+* author: Rachel Lewis
+* class: CS 4310 - Operating Systems
+*
+* assignment: program 3
+* date last modified: 5/3/2020
+*
+* purpose: This file is the class definition for a Process object.
+*
+****************************************************************/ 
 public class Process {
 	private int processId;
 	private int arrival;
